@@ -9,7 +9,72 @@ body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
 header { background-color: #ff5757; color: white; padding: 20px 0; text-align: center; }
 .container { width: 80%; margin: auto; overflow: hidden; padding: 20px; }
 .btn { display: inline-block; padding: 10px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px; }
-.btn-primary { background-color: #ff5757; }
+.btn-primary { background-color: #ff5757; }.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.card-header {
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.basic { background-color: #2b78b1; }
+.fast { background-color: #e6a100; }
+.super { background-color: #a0286b; }
+.turbo { background-color: #8b0000; }
+
+.speed {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #ff5757;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 14px;
+  color: #666;
+}
+
+.promo {
+  font-size: 13px;
+  color: #444;
+  margin: 15px 0;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: #ff5757;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
 </style>
 </head>
 <body>
@@ -18,8 +83,26 @@ header { background-color: #ff5757; color: white; padding: 20px 0; text-align: c
 <p>Internet Rumah Tanpa Batas, Cepat dan Stabil</p>
 </header>
 <div class="container">
-<h2>Nikmati Pengalaman Internet Terbaik</h2>
-<p>Dapatkan koneksi fiber optic berkualitas untuk seluruh keluarga. Streaming lancar, gaming tanpa lag!</p>
+<<div class="pricing-container">
+  <!-- Paket HiFiBasic -->
+  <div class="card">
+    <div class="card-header basic">Paket Hemat</div>
+    <div class="speed">Up To 50 Mbps</div>
+    <div class="price">Rp 198.690</div>
+    <p class="promo">Paket Hemat, Lancar</p>
+    <a href="https://wa.me/6285892431341">Daftar Sekarang</a>
+  </div>
+
+  <!-- Paket HiFiFast -->
+  <div class="card popular">
+    <div class="badge">BEST SELLER</div>
+    <div class="card-header fast">Paket Cepat</div>
+    <div class="speed">Up To 100 Mbps</div>
+    <div class="price">Rp 220.890</div>
+    <p class="promo">Bayar 5 Gratis 1</p>
+    <a href="https://wa.me/6285892431341">Daftar Sekarang</a>
+  </div>
+</div>
 <a href="https://wa.me/6285892431341" class="btn btn-primary">Daftar Sekarang</a>
 </div>
 </body>
